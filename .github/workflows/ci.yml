@@ -11,7 +11,7 @@ on:
       - main
 
 jobs:
-  flutter-test:
+  flutter_test:
     name: Run Flutter analyze and test
     runs-on: ubuntu-latest
     steps:
