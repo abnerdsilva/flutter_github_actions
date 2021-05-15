@@ -12,7 +12,7 @@ on:
 
 jobs:
   flutter-test:
-    name: Run Flutter analyse and test
+    name: Run Flutter analyze and test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -23,7 +23,7 @@ jobs:
         with:
           channel: "stable"
       - run: flutter pub get
-      - run: flutter analyse
+      - run: flutter analyze
       - run: flutter format --dry-run --set-exit-if-changed lib/
       - run: flutter format --dry-run --set-exit-if-changed test/
       - run: flutter test --coverage
